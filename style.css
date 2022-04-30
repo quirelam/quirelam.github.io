@@ -151,6 +151,7 @@ body {
     visibility: visible;
 }
 .drop-content {
+    z-index: 10;
     position: absolute;
     margin-left: -1px;
     opacity: 0;
