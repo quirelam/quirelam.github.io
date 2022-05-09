@@ -53,6 +53,9 @@ body {
 .col-md-8 {
     width: 66.66667%;
 }
+.col-md-12 {
+    width: 100%;
+}
 .logo {
     margin-top: 8px;
 }
@@ -171,10 +174,6 @@ text-align: left;
 .drop-content a:hover {
     color: #2c71b8;
     background-color: white;
-}
-.plug {
-    background-color: rgba(255, 255, 255, 0.20);
-    height: 843px;
 }
 .navigation {
     padding: 30px 0px;
@@ -315,7 +314,7 @@ right: 0;
     padding-bottom: 25px;
     text-align: center;
 }
-.button-detail{
+.button-detail, .button-submit{
     width: calc(100% - 30px);
     color:white;
     background-color: #2c71b8;
@@ -327,6 +326,64 @@ right: 0;
     font-size: 21px;
     font-weight: 700;
 }
-.button-detail:hover{
+.button-submit{
+    width: 100%;
+    margin: 0;
+}
+.button-detail:hover, .button-submit:hover{
     background-color: rgba(255, 255, 255, 0.20);
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    line-height: 100px;
+    color: #2c71b8;
+    font-size: 21px;
+}
+.load-more {    
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+.load-more a {
+    text-decoration: none;
+    color: white;
+}
+.checkbox-side {
+    background-color: rgba(255, 255, 255, 0.20);
+padding: 30px;
+color: white;
+font-size: 21px;
+}
+[class*=caption] {
+    font-weight: 700;
+}
+.caption-device {
+    margin-bottom: 10px;
+}
+.caption-color, .caption-ram {
+    margin-top: 60px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+input[type="checkbox"]:checked + label:before {
+background-color: white;
+}
+.show-more a{
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: none;
+    color: white;
 }
